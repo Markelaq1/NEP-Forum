@@ -16,7 +16,7 @@
             font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             background: #0B0E14;
             color: #E8EDF2;
-            line-height: 1.5;
+            line-height: 1.6;
             padding: 40px 20px;
         }
 
@@ -103,37 +103,71 @@
             width: 100%;
         }
 
-        /* Все параграфы — по центру */
-        .invitation p {
-            max-width: 700px;
+        /* Параграфы ДО кнопки — по ширине */
+        .invitation .text-justify {
+            max-width: 750px;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            text-align: center;
+            margin-bottom: 24px;
+            line-height: 1.7;
+            text-align: justify;
         }
 
-        /* Список производителей — тоже по центру */
+        /* Список производителей */
         .producers-list {
-            max-width: 700px;
-            margin: 20px auto;
-            line-height: 1.8;
-            text-align: center;
+            max-width: 750px;
+            margin: 20px auto 30px;
+            line-height: 2;
+            text-align: left;
             padding: 0;
         }
 
         .producers-list p {
-            text-align: center;
-            margin-bottom: 6px;
+            text-align: left;
+            margin-bottom: 4px;
             padding: 0;
             background: none;
             border: none;
             max-width: 100%;
+            font-weight: 400;
+            color: #B0C4DE;
+        }
+
+        .producers-list p strong {
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+
+        /* Призыв к диалогу — по центру */
+        .invitation .call-to-action {
+            text-align: center;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Параграф с экспертом — по центру */
+        .invitation .expert-line {
+            text-align: center;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 24px;
+        }
+
+        /* Параграфы ПОСЛЕ кнопки — по центру */
+        .invitation .text-center {
+            text-align: center;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
         }
 
         /* ДАТА И ВРЕМЯ */
         .date-time {
-            max-width: 700px;
+            max-width: 750px;
             margin-left: auto;
             margin-right: auto;
             background: rgba(0, 0, 0, 0.4);
@@ -149,7 +183,7 @@
 
         /* МЕСТО ПРОВЕДЕНИЯ */
         .descriptionn {
-            max-width: 700px;
+            max-width: 750px;
             margin-left: auto;
             margin-right: auto;
             font-weight: 600;
@@ -209,7 +243,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            display: inline-block;
+            display: inline;
             animation: name-pulse 1.2s ease-in-out infinite;
         }
 
@@ -250,8 +284,16 @@
                 font-size: 0.95rem;
             }
 
-            .invitation p {
+            .invitation .text-justify {
                 max-width: 100%;
+            }
+
+            .producers-list {
+                max-width: 100%;
+            }
+
+            .producers-list p {
+                font-size: 0.95rem;
             }
 
             .date-time {
@@ -262,7 +304,7 @@
                 max-width: 100%;
             }
 
-            .producers-list {
+            .expert-line {
                 max-width: 100%;
             }
         }
@@ -307,36 +349,36 @@
             <h1>Н.Э.П</h1>
             <h2>"Новые технологии. Эффективные закупки. Перспективные решения"</h2>
 
-            <p>
+            <p class="text-justify">
                 Уважаемые коллеги! Компания АРЕНА приглашает вас на партнерскую встречу с участием ведущих российских
                 производителей и эксперта-практика по вопросам госзаказа.
             </p>
 
-            <p>
+            <p class="text-justify">
                 Чтобы оставаться в контексте быстро меняющихся технологий, законодательства и их влияния на нашу с вами
                 деятельность, важно акцентировать внимание на нескольких ключевых аспектах: актуализации знаний,
                 развитии контактов и переосмыслении понимания доступных ресурсов.
             </p>
 
-            <p>
+            <p class="text-justify">
                 Цель мероприятия: развитие компетенций, обмен опытом, совместный анализ стратегий и перспектив в мире IT
                 и гос. закупок.
             </p>
 
-            <p>Вас ждет прямой диалог с ведущими разработчиками и производителями:</p>
+            <p class="call-to-action">Вас ждет прямой диалог с ведущими разработчиками и производителями:</p>
 
             <div class="producers-list">
-                <p>• IT экосистема Катюша Принт. Реестровые решения в печати</p>
-                <p>• ГЕЛЕОС. Офисное оборудование</p>
-                <p>• RDW Computers - Создаем будущее своими руками: путь к цифровому суверенитету вместе. Российский
-                    производитель компьютерной техники</p>
-                <p>• КИТ. Российский производитель сетевого оборудования</p>
+                <p>• <strong>IT экосистема Катюша Принт</strong> — реестровые решения в печати</p>
+                <p>• <strong>ГЕЛЕОС</strong> — офисное оборудование</p>
+                <p>• <strong>RDW Computers</strong> — Создаем будущее своими руками: путь к цифровому суверенитету
+                    вместе. Российский производитель компьютерной техники</p>
+                <p>• <strong>КИТ</strong> — российский производитель сетевого оборудования</p>
             </div>
 
-            <p>
-               А для максимальной продуктивности встречи выступит 
-    <span class="expert-name-glow">эксперт-практик, антикризисный юрист по
-    вопросам ГОСЗАКАЗА и ГОСОБОРОНЗАКАЗА – Евгения Олимпиева</span>.
+            <p class="expert-line">
+                А для максимальной продуктивности встречи выступит
+                <span class="expert-name-glow">эксперт-практик, антикризисный юрист по вопросам ГОСЗАКАЗА и
+                    ГОСОБОРОНЗАКАЗА – Евгения Олимпиева</span>.
             </p>
 
             <a href="https://forms.gle/3BV9aLQ75zYdDiRb9" target="_blank">
@@ -356,8 +398,9 @@
                 г. Самара, Октябрьский район, улица Советской Армии, 251 к3.
             </p>
 
-            <p>По всем вопросам обращайтесь к Долгановой Нине<br> 8-939-757-13-60, nina.kuzmina@arenaciti.ru.</p>
-            <p>С уважением, компания АРЕНА</p>
+            <p class="text-center">По всем вопросам обращайтесь к Долгановой Нине<br> 8-939-757-13-60,
+                nina.kuzmina@arenaciti.ru.</p>
+            <p class="text-center">С уважением, компания АРЕНА</p>
         </div>
 
         <div class="footer"></div>
